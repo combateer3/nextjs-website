@@ -1,0 +1,20 @@
+.navbar {
+    position: sticky;
+    padding: 2rem;
+    display: flex;
+    background: red;
+}
+
+.navbar p {
+    --fontsize: 1.5rem;
+    position: absolute;
+    top: calc(50% - (var(--fontsize)  / 2));
+    font-size: var(--fontsize);
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin: 0 auto;
+}
