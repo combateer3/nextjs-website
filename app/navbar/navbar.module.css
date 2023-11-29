@@ -18,3 +18,44 @@
     gap: 4rem;
     margin: 0 auto;
 }
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/* TABLET SCREENS */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .link-list {
+        margin-right: 1.5rem;
+    }
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 768px) {
+    .link-list {
+        flex-direction: column;
+        margin-right: 1rem;
+        gap: 1rem;
+        display: none;
+        position: fixed;
+        right: 2rem;
+        background: purple;
+    }
+
+    .link-list[data-visible="true"] {
+        display: inherit;
+    }
+
+    .link-list li {
+        padding: 1rem;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu-icon:hover {
+        cursor: pointer;
+    }
+}
