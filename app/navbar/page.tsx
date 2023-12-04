@@ -3,7 +3,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { RxHamburgerMenu } from "react-icons/rx"
-import clsx from 'clsx'
 
 import styles from './navbar.module.css'
 

@@ -2,7 +2,11 @@
     position: sticky;
     padding: 2rem;
     display: flex;
-    background: red;
+    background: var(--darktheme-background);
+}
+
+.navbar * {
+    color: var(--darktheme-text);
 }
 
 .navbar p {
@@ -34,12 +38,11 @@
 @media screen and (max-width: 768px) {
     .link-list {
         flex-direction: column;
-        margin-right: 1rem;
         gap: 1rem;
         display: none;
         position: fixed;
-        right: 2rem;
-        background: purple;
+        right: 3rem;
+        background: var(--darktheme-secondary);
     }
 
     .link-list[data-visible="true"] {

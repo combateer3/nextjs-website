@@ -1,3 +1,10 @@
+:root {
+  /* THEME COLORS */
+  --darktheme-background: #303952;
+  --darktheme-secondary: #596275;
+  --darktheme-text: #F8F8FF;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
