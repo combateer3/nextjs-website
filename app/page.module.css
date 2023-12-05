@@ -1,0 +1,13 @@
+.main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+        "... desc desc desc pic pic ...";
+}
+
+.desc {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    grid-area: desc;
+}
