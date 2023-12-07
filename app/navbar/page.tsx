@@ -15,7 +15,7 @@ export default function NavBar() {
 
     return (
         <nav className={styles['navbar']}>
-            <p><Link href="/">Scott Corbat</Link></p>
+            <p className={styles['nav-title']}><Link href="/">Scott Corbat</Link></p>
             <button onClick={onMobileMenuClick} className={styles['mobile-menu-icon']}><RxHamburgerMenu/></button>
             <ul className={styles['link-list']} data-visible={mobileMenuVisible}>
                 <li><Link href="about">About</Link></li>

@@ -2,18 +2,19 @@
     position: sticky;
     padding: 2rem;
     display: flex;
-    background: var(--darktheme-background);
+    background: var(--background-color)
 }
 
-.navbar * {
-    color: var(--darktheme-text);
+.navbar li > a {
+    color: var(--text-color);
 }
 
-.navbar p {
+.nav-title {
     --fontsize: 1.5rem;
     position: absolute;
     top: calc(50% - (var(--fontsize)  / 2));
     font-size: var(--fontsize);
+    color: var(--text-color);
 }
 
 .link-list {
@@ -36,13 +37,18 @@
 
 /* MOBILE SCREENS */
 @media screen and (max-width: 768px) {
+    /* primary buttons always have dark text */
+    .navbar li > a {
+        color: var(--darktheme-background);
+    }
+
     .link-list {
         flex-direction: column;
         gap: 1rem;
         display: none;
         position: fixed;
         right: 3rem;
-        background: var(--darktheme-secondary);
+        background: var(--primary-color);
     }
 
     .link-list[data-visible="true"] {
@@ -56,6 +62,7 @@
     .mobile-menu-icon {
         display: block;
         margin-left: auto;
+        color: var(--text-color);
     }
 
     .mobile-menu-icon:hover {
