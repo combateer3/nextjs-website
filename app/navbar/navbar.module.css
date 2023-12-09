@@ -5,8 +5,12 @@
     background: var(--background-color)
 }
 
-.navbar li > a {
+.nav-link {
     color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
 }
 
 .nav-title {
@@ -38,7 +42,7 @@
 /* MOBILE SCREENS */
 @media screen and (max-width: 768px) {
     /* primary buttons always have dark text */
-    .navbar li > a {
+    .nav-link, .nav-link:hover {
         color: var(--darktheme-background);
     }
 

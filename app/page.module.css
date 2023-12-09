@@ -1,13 +1,38 @@
 .main {
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
     grid-template-areas:
         "... desc desc desc pic pic ...";
 }
 
 .desc {
+    grid-area: desc;
+    color: var(--text-color);
+}
+
+.desc h1 {
+    font-size: 4rem;
+}
+
+.desc p {
     font-size: 1.3rem;
     line-height: 1.5;
-    grid-area: desc;
+}
+
+.portrait {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    grid-area: pic;
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 768px) {
+    .main {
+        grid-template-areas: 
+        "... desc desc desc desc desc ..."
+        "... pic pic pic pic pic ...";
+    }
 }

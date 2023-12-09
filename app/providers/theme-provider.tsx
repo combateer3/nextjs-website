@@ -10,7 +10,7 @@ type themeContextType = {
 
 //default values
 const themeContextDefaults: themeContextType = {
-    theme: 'light',
+    theme: 'dark',
     toggleTheme: () => {}
 }
 
