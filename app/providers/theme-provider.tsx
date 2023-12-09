@@ -14,7 +14,7 @@ const themeContextDefaults: themeContextType = {
     toggleTheme: () => {}
 }
 
-const ThemeContext = createContext(themeContextDefaults);
+export const ThemeContext = createContext(themeContextDefaults);
 
 export function ThemeProvider({children}: {children: React.ReactNode}) {
     const [theme, setTheme] = useState(themeContextDefaults.theme);

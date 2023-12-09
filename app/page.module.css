@@ -7,6 +7,20 @@
         "... desc desc desc pic pic ...";
 }
 
+.theme-btn {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    padding: 0.2rem;
+    border-radius: 30%;
+}
+
+.theme-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
 .desc {
     grid-area: desc;
     color: var(--text-color);
@@ -26,6 +40,15 @@
     object-fit: cover;
     border-radius: 50%;
     grid-area: pic;
+}
+
+/* TABLET SCREENS AND LOWER */
+@media screen and (max-width: 1080px) {
+    .theme-btn {
+        top: auto;
+        bottom: 1rem;
+        right: 0.5rem;
+    }
 }
 
 /* MOBILE SCREENS */

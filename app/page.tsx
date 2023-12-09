@@ -1,9 +1,16 @@
+'use client'
+
+import { useContext } from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import { ThemeContext } from './providers/theme-provider'
 
 export default function Root() {
+  const {theme, toggleTheme} = useContext(ThemeContext);
+
   return (
     <main className={styles['main']}>
+      <button className={styles['theme-btn']} onClick={toggleTheme}>{theme === 'dark' ? '☀️' : '🌙'}</button>
       <div className={styles['desc']}>
         <h1 className="primary-text">Intro</h1>
         <p>
