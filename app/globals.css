@@ -1,17 +1,33 @@
-:root {
+/* :root { */
   /* LIGHT THEME COLORS */
-  --lighttheme-text: #020c0d;
+  /* --lighttheme-text: #020c0d;
   --lighttheme-background: #f6fefe;
   --lighttheme-primary: #24e0dd;
   --lighttheme-secondary: #e587ed;
-  --lighttheme-accent: #e44ea1;
+  --lighttheme-accent: #e44ea1; */
 
   /* DARK THEME COLORS */
-  --darktheme-text: #f2fcfd;
+  /* --darktheme-text: #f2fcfd;
   --darktheme-background: #010909;
   --darktheme-primary: #1fdbd8;
   --darktheme-secondary: #6f1278;
-  --darktheme-accent: #b11b6e;
+  --darktheme-accent: #b11b6e; */
+/* } */
+
+:root {
+  /* LIGHT THEME COLORS */
+  --lighttheme-text: #0f131f;
+  --lighttheme-background: #eef0f6;
+  --lighttheme-primary: #2f3860;
+  --lighttheme-secondary: #c587bd;
+  --lighttheme-accent: #944769;
+
+  /* DARK THEME COLORS */
+  --darktheme-text: #e0e4f0;
+  --darktheme-background: #090b11;
+  --darktheme-primary: #9fa8d0;
+  --darktheme-secondary: #783a70;
+  --darktheme-accent: #b86b8c;
 }
 
 /* Change variables based on theme */
@@ -55,6 +71,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--text-color);
+}
+
 button {
   all: unset;
 }
@@ -64,7 +84,15 @@ img, Image {
   height: auto;
 }
 
-/* Some utility classes for colors */
+ul {
+  list-style: none;
+}
+
+/* Some utility classes */
+.page-header {
+  font-size: 4rem;
+}
+
 .primary-text {
   color: var(--primary-color);
 }

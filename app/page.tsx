@@ -16,7 +16,7 @@ export default function Root() {
         <p>
           Hi there! I'm Scott Corbat. I'm currently working as a controls engineer at HTI Cybernetics.
           I studied Computer Science at Michigan Technological University, and earned my bachelor's degree
-          there. In my free time I enjoy programming, powerlifting, videography, and video games.
+          there.
         </p>
       </div>
 

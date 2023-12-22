@@ -18,9 +18,10 @@ export default function NavBar() {
             <p className={styles['nav-title']}><Link href="/">Scott Corbat</Link></p>
             <button onClick={onMobileMenuClick} className={styles['mobile-menu-icon']}><RxHamburgerMenu/></button>
             <ul className={styles['link-list']} data-visible={mobileMenuVisible}>
-                <li><Link className={styles['nav-link']} href="about">About</Link></li>
                 <li><Link className={styles['nav-link']} href="experience">Experience</Link></li>
+                <li><Link className={styles['nav-link']} href="projects">Projects</Link></li>
                 <li><Link className={styles['nav-link']} href="videography">Videography</Link></li>
+                <li><Link className={styles['nav-link']} href="powerlifting">Powerlifting</Link></li>
             </ul>
         </nav>
     )

@@ -1,0 +1,66 @@
+.main {
+    padding-bottom: 5rem;
+}
+
+.page-title {
+    width: fit-content;
+    position: relative;
+    left: 50dvh;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* Vertical line of timeline */
+.timeline::before {
+    content: '';
+    display: block;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -10%;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    background-color: hsl(0, 0%, 20%);
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+/* Bubbles on timeline */
+.timeline-item::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(-10% - 15px);
+    margin-top: 40px;
+    background-color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+    z-index: 1;
+}
+
+.timeline-item * {
+    color: var(--text-color)
+}
+
+.timeline-item-body {
+    margin-top: 1rem;
+}
+
+.timeline-item-body ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

@@ -1,8 +1,10 @@
 .navbar {
     position: sticky;
+    top: 0;
     padding: 2rem;
     display: flex;
-    background: var(--background-color)
+    background: var(--background-color);
+    z-index: 100;
 }
 
 .nav-link {
@@ -43,7 +45,7 @@
 @media screen and (max-width: 768px) {
     /* primary buttons always have dark text */
     .nav-link, .nav-link:hover {
-        color: var(--darktheme-background);
+        color: var(--darktheme-text);
     }
 
     .link-list {
