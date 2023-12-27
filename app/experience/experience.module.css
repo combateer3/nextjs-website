@@ -5,7 +5,7 @@
 .page-title {
     width: fit-content;
     position: relative;
-    left: 50dvh;
+    left: 20dvw;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
@@ -59,8 +59,32 @@
     margin-top: 1rem;
 }
 
+.timeline-item-body p {
+    line-height: 1.6;
+}
+
 .timeline-item-body ul {
     list-style: disc inside;
+    line-height: 1.5;
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+/* TABLET SCREENS */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .timeline {
+        width: 70%;
+    }
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .timeline {
+        width: 80%;
+        margin-left: 15dvw;
+    }
 }

@@ -7,20 +7,6 @@
         "... desc desc desc pic pic ...";
 }
 
-.theme-btn {
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    font-size: 2rem;
-    padding: 0.2rem;
-    border-radius: 30%;
-}
-
-.theme-btn:hover {
-    cursor: pointer;
-    background-color: var(--accent-color);
-}
-
 .desc {
     grid-area: desc;
     color: var(--text-color);
@@ -46,12 +32,6 @@
 @media screen and (max-width: 1080px) {
     .main {
         grid-template-columns: 3rem repeat(5, 1fr) 3rem;
-    }
-
-    .theme-btn {
-        top: auto;
-        bottom: 1rem;
-        right: 0.5rem;
     }
 
     .portrait {
